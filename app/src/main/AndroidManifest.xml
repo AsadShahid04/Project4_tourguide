@@ -31,7 +31,7 @@
         </activity>
         <activity
             android:name=".NumbersActivity"
-            android:label="Top Attractions"
+            android:label="Restaurants"
             android:parentActivityName=".MainActivity">
             <!-- Parent activity meta-data to support 4.0 and lower -->
             <meta-data
@@ -40,7 +40,7 @@
         </activity>
         <activity
             android:name=".FamilyActivity"
-            android:label="Restaurants"
+            android:label="Top Attractions"
             android:parentActivityName=".MainActivity">
             <!-- Parent activity meta-data to support 4.0 and lower -->
             <meta-data
@@ -58,7 +58,7 @@
         </activity>
         <activity
             android:name=".PhrasesActivity"
-            android:label="Events"
+            android:label="Public Places"
             android:parentActivityName=".MainActivity">
             <!-- Parent activity meta-data to support 4.0 and lower -->
             <meta-data

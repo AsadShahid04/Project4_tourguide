@@ -41,18 +41,18 @@
         android:id="@+id/numbers"
         style="@style/CategoryStyle"
         android:background="#FFD700"
-        android:text="Top Attractions" />
+        android:text="Restaurants" />
 
     <TextView
         android:id="@+id/family"
         style="@style/CategoryStyle"
         android:background="#DC143C"
-        android:text="Restaurants" />
+        android:text="Top Attractions" />
 
     <TextView
         android:id="@+id/phrases"
         style="@style/CategoryStyle"
         android:background="#FFD700"
-        android:text="Events" />
+        android:text="Public Places" />
 
 </LinearLayout>
