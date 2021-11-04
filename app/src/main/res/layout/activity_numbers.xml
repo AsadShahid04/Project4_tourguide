@@ -1,18 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2016 The Android Open Source Project
-
-     Licensed under the Apache License, Version 2.0 (the "License");
-     you may not use this file except in compliance with the License.
-     You may obtain a copy of the License at
-
-          http://www.apache.org/licenses/LICENSE-2.0
-
-     Unless required by applicable law or agreed to in writing, software
-     distributed under the License is distributed on an "AS IS" BASIS,
-     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-     See the License for the specific language governing permissions and
-     limitations under the License.
--->
+<!-- This is used for starting the page-->
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -22,33 +9,41 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.android.miwok.ColorsActivity">
-
+    tools:context="com.example.android.miwok.ColorsActivity"
+    android:background="#17517e">
+    <!-- This is used for making the layout to put everything else inside-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
-
+        <!-- A textbox used for title/name-->
         <TextView
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Abacá" />
-
+            android:text="Abacá"
+            android:fontFamily="serif-monospace"
+            android:textSize="20dp"
+            android:textStyle="italic"
+            android:textAllCaps="true"
+            android:textColor="#FFD700"
+            android:layout_gravity="center"/>
+        <!-- Used to input the image of the attraction-->
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="match_parent"
             android:layout_height="250dp"
             android:padding="7dp"
             app:srcCompat="@drawable/abaca" />
-
+        <!-- Textbox for description-->
         <TextView
             android:id="@+id/textView2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColor="#FFD700"
             android:text="Chef Francis Ang’s hotly anticipated first brick and mortar arrived in early August, bringing contemporary Filipino cuisine to a space on the ground floor of a hotel in Fisherman’s Wharf. It’s perhaps not where you’d expect the face of the Bay Area’s modern Filipino food movement to set up shop, but the plant-filled restaurant is utterly drenched in sunlight and further brightened by sunflower yellow banquettes and woven baskets from the southeast Asian archipelago. On the menu: a selection of sharbale plates including sticky barbecue skewers, a light and refreshing tomato and peach salad, and, of course, a whole pastry case filled with fresh baked delights. And with a cocktail menu by Kevin Diedrich (Pacific Cocktail Haven, Kona’s Street Market) the colorful concoctions demand attention, too. \n
         \n\n Address: 2700 Jones St, San Francisco CA 94133\n\n Phone number: (415) 486-0788\n"/>
-
+        <!-- Button for moving onto the next attraction-->
         <Button
             android:id="@+id/next"
             android:layout_width="100dp"

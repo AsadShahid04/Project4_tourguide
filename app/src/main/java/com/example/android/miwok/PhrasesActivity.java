@@ -25,16 +25,16 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 public class PhrasesActivity extends AppCompatActivity {
-
+    //Creates current page variable
     int current = 1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_phrases);
-
+//Establishes button from XML file
         Button next = findViewById(R.id.next);
-
+//If it is clicked then it moves on to next page (updates current variable and loops around)
         next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -50,12 +50,16 @@ public class PhrasesActivity extends AppCompatActivity {
         });
 
     }
-
+    //next page function
     private void updateCurrent(){
+        //Establishes the ImageView from XMl file
         ImageView picture = findViewById(R.id.imageView);
+        //Establishes the TextView from XMl file
         TextView name = findViewById(R.id.textView);
+        //Establishes the TextView from XMl file
         TextView description = findViewById(R.id.textView2);
 
+        //The below loops updates the ImageViews and TextViews based on the "current" variable
         if(current == 2){
             picture.setImageDrawable(getDrawable(R.drawable.palaceoffinearts));
             name.setText("Palace of Fine Arts");

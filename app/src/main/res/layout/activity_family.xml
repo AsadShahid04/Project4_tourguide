@@ -1,18 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2016 The Android Open Source Project
 
-     Licensed under the Apache License, Version 2.0 (the "License");
-     you may not use this file except in compliance with the License.
-     You may obtain a copy of the License at
-
-          http://www.apache.org/licenses/LICENSE-2.0
-
-     Unless required by applicable law or agreed to in writing, software
-     distributed under the License is distributed on an "AS IS" BASIS,
-     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-     See the License for the specific language governing permissions and
-     limitations under the License.
--->
+<!-- This is used for starting the page-->
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -22,41 +10,49 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.android.miwok.FamilyActivity">
-
+    tools:context="com.example.android.miwok.FamilyActivity"
+    android:background="#17517e">
+    <!-- This is used for making the layout to put everything else inside-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
-
+        <!-- A textbox used for title/name-->
         <TextView
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Golden Gate Bridge" />
-
+            android:text="Golden Gate Bridge"
+            android:fontFamily="serif-monospace"
+            android:textSize="20dp"
+            android:textStyle="italic"
+            android:textAllCaps="true"
+            android:textColor="#FFD700"
+            android:layout_gravity="center"
+            />
+        <!-- Used to input the image of the attraction-->
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="match_parent"
             android:layout_height="250dp"
             android:padding="7dp"
             app:srcCompat="@drawable/homepage" />
-
+        <!-- Textbox for description-->
         <TextView
             android:id="@+id/textView2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColor="#FFD700"
             android:text="A marvel of modern engineering, the Golden Gate Bridge is 1.7 miles long and 90 feet wide. Its 4,200-foot main span between the two towers was the longest for a suspension bridge until 1981, while its 746-foot towers made it the tallest bridge of any type until 1993. The Golden Gate Bridge is a suspension bridge spanning the Golden Gate, the one-mile-wide strait connecting San Francisco Bay and the Pacific Ocean
 \n\n Address: Golden Gate Bridge, San Francisco, CA
 \n\n Phone number: (415) 921-5858
 " />
-
+        <!-- Button for moving onto the next attraction-->
         <Button
             android:id="@+id/next"
             android:layout_width="100dp"
             android:layout_height="50dp"
             android:layout_gravity="center_horizontal"
-            android:backgroundTint="#EE4B2B"
             android:text="Next" />
 
     </LinearLayout>

@@ -25,16 +25,16 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 public class FamilyActivity extends AppCompatActivity {
-
+    //Creates current page variable
     int current = 1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_family);
-
+//Establishes button from XML file
         Button next = findViewById(R.id.next);
-
+//If it is clicked then it moves on to next page (updates current variable and loops around)
         next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -50,14 +50,18 @@ public class FamilyActivity extends AppCompatActivity {
         });
 
     }
-
+    //next page function
     private void updateCurrent(){
+        //Establishes the ImageView from XMl file
         ImageView picture = findViewById(R.id.imageView);
+        //Establishes the TextView from XMl file
         TextView name = findViewById(R.id.textView);
+        //Establishes the TextView from XMl file
         TextView description = findViewById(R.id.textView2);
 
+        //The below loops updates the ImageViews and TextViews based on the "current" variable
         if(current == 2){
-            //picture.setImageDrawable(getDrawable(R.drawable.alcatraz));
+            picture.setImageDrawable(getDrawable(R.drawable.alcatraz));
             name.setText("Alcatraz Island");
             description.setText("Alcatraz Island is located in San Francisco Bay, 1.25 miles offshore from San Francisco, California, United States. The small island was developed with facilities for a lighthouse, a military fortification, a military prison, and a federal prison, the latter operated from August 11, 1934 until March 21, 1963\n\n" +
                     "San Francisco, CA 94133\n\n" +
@@ -72,7 +76,7 @@ public class FamilyActivity extends AppCompatActivity {
         }
 
         else if(current == 4) {
-            //picture.setImageDrawable(getDrawable(R.drawable.unionsquare));
+            picture.setImageDrawable(getDrawable(R.drawable.unionsquare));
             name.setText("Union Square");
             description.setText("Union Square is a 2.6-acre public plaza bordered by Geary, Powell, Post and Stockton Streets in downtown San Francisco, California. \"Union Square\" also refers to the central shopping, hotel, and theater district that surrounds the plaza for several blocks.\n\n Address: 333 Post St, San Francisco, CA 94108\n\n Phone number: (415) 486-4800");
         }
