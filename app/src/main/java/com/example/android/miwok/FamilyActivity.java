@@ -86,16 +86,6 @@ public class FamilyActivity extends AppCompatActivity {
             name.setText("Fisherman‘s Wharf");
             description.setText("Fisherman’s Wharf, on the northern waterfront, is one of the city's busiest tourist areas. Souvenir shops and stalls selling crab and clam chowder in sourdough bread bowls appear at every turn, as do postcard views of the bay, Golden Gate and Alcatraz. There’s also a colony of sea lions to see and historic ships to tour.");
         }
-        else if(current == 6) {
-            picture.setImageDrawable(getDrawable(R.drawable.chiatwon));
-            name.setText("Chinatown");
-            description.setText("This is one of the oldest and most established Chinatowns in the U.S. Beyond iconic Dragon’s Gate, a bustling maze of streets and alleys brims with dim sum joints and other traditional eateries. Also found are herbalists, bakeries, souvenir shops, and dark cocktail lounges and karaoke bars. There are ornate temples, including the landmark Tien How, as well as the Chinese Historical Society of America Museum.\n");
-        }
-        else if(current == 7) {
-            picture.setImageDrawable(getDrawable(R.drawable.homepage));
-            name.setText("Golden Gate Bridge");
-            description.setText("A marvel of modern engineering, the Golden Gate Bridge is 1.7 miles long and 90 feet wide. Its 4,200-foot main span between the two towers was the longest for a suspension bridge until 1981, while its 746-foot towers made it the tallest bridge of any type until 1993. The Golden Gate Bridge is a suspension bridge spanning the Golden Gate, the one-mile-wide strait connecting San Francisco Bay and the Pacific Ocean\n\n Address: Golden Gate Bridge, San Francisco, CA\n\n Phone number: (415) 921-5858 ");
-        }
 
     }
 
