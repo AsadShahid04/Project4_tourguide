@@ -50,7 +50,7 @@ public class ColorsActivity extends AppCompatActivity {
                 updateCurrent();
 
                 if(current == 3){
-                    current=0;
+                    current=-1;
                 }
 
             }
@@ -97,6 +97,10 @@ public class ColorsActivity extends AppCompatActivity {
         }
 
     }
+
+    //EditText simpleEditText = (EditText) findViewById(R.id.simpleEditText);
+
+    //String editTextValue = simpleEditText.getText().toString();
 
 }
 

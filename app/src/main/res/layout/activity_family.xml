@@ -18,6 +18,12 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
         <!-- A textbox used for title/name-->
+        <EditText
+            android:id="@+id/simpleEditText"
+            android:layout_width="match_parent"
+            android:layout_height="20dp">
+
+        </EditText>
         <TextView
             android:id="@+id/textView"
             android:layout_width="wrap_content"
